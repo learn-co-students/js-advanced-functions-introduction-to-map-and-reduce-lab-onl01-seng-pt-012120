@@ -39,25 +39,15 @@ function reduceToTotal(arr, init = 0) {
 }
 
 function reduceToAllTrue(arr) {
-    let result = false;
-    let truthyArr = [];
     for (let i=0; i < arr.length; i++) {
-        if (!!arr[i]) {
-            truthyArr.push(arr[i])
-        }  // For each arr element, if truthy, add to new array
-    };
-    if (truthyArr.length === arr.length) {
-        result = true
-    }; // if new arr length is equal to original, change result to true
-    return result
+        if (!arr[i]) return false
+    }
+    return true
 }
 
 function reduceToAnyTrue(arr) {
-    let result = false;
     for (let i=0; i < arr.length; i++) {
-        if (!!arr[i]) {
-            result = true
-        }
-    };
-    return result
+        if (arr[i]) return true
+    }
+    return false
 }
