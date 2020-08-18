@@ -46,27 +46,13 @@ const reduceToTotal = (data,sp = 0) => {
 };
 
 const reduceToAllTrue = (data) => {
-    let rA = false;
-    data.forEach(item => {
-        if (item){
-            rA = true;
-        }else{
-            rA = false;
-            return rA;
-        }
-    });
+    let rA = [];
+    
     return rA;
 };
 
 const reduceToAnyTrue = (data) => {
-    let rA = false;
-    data.forEach(item => {
-        if (item) {
-            rA = true;
-        } else {
-            rA = false;
-            return rA;
-        }
-    });
+    let rA = [];
+    
     return rA;
 };

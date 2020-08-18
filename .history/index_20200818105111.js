@@ -45,28 +45,10 @@ const reduceToTotal = (data,sp = 0) => {
     return reduced;
 };
 
-const reduceToAllTrue = (data) => {
-    let rA = false;
-    data.forEach(item => {
-        if (item){
-            rA = true;
-        }else{
-            rA = false;
-            return rA;
-        }
-    });
-    return rA;
+const reduceToAllTrue = () => {
+
 };
 
-const reduceToAnyTrue = (data) => {
-    let rA = false;
-    data.forEach(item => {
-        if (item) {
-            rA = true;
-        } else {
-            rA = false;
-            return rA;
-        }
-    });
-    return rA;
+const reduceToAnyTrue = () => {
+
 };
