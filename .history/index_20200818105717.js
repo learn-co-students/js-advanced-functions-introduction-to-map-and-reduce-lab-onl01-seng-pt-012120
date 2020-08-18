@@ -50,23 +50,13 @@ const reduceToAllTrue = (data) => {
     data.forEach(item => {
         if (item){
             rA = true;
-        }else{
-            rA = false;
-            return rA;
         }
     });
     return rA;
 };
 
 const reduceToAnyTrue = (data) => {
-    let rA = false;
-    data.forEach(item => {
-        if (item) {
-            rA = true;
-        } else {
-            rA = false;
-            return rA;
-        }
-    });
+    let rA = [];
+    
     return rA;
 };

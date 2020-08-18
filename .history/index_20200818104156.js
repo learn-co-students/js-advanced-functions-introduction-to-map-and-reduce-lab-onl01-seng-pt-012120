@@ -32,41 +32,7 @@ const mapToDouble = (data)=>{
 const mapToSquare = (data) => {
     let newA = [];
     data.forEach(item => {
-        newA.push(item ** 2);
+        newA.push(item**2);
     });
-    return newA;
 };
 
-const reduceToTotal = (data,sp = 0) => {
-    let reduced = sp;
-    data.forEach(item => {
-        reduced += item;
-    });
-    return reduced;
-};
-
-const reduceToAllTrue = (data) => {
-    let rA = false;
-    data.forEach(item => {
-        if (item){
-            rA = true;
-        }else{
-            rA = false;
-            return rA;
-        }
-    });
-    return rA;
-};
-
-const reduceToAnyTrue = (data) => {
-    let rA = false;
-    data.forEach(item => {
-        if (item) {
-            rA = true;
-        } else {
-            rA = false;
-            return rA;
-        }
-    });
-    return rA;
-};

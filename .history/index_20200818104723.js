@@ -37,36 +37,10 @@ const mapToSquare = (data) => {
     return newA;
 };
 
-const reduceToTotal = (data,sp = 0) => {
-    let reduced = sp;
+const reduceToTotal = (data) => {
+    let reduced = 0;
     data.forEach(item => {
         reduced += item;
     });
     return reduced;
-};
-
-const reduceToAllTrue = (data) => {
-    let rA = false;
-    data.forEach(item => {
-        if (item){
-            rA = true;
-        }else{
-            rA = false;
-            return rA;
-        }
-    });
-    return rA;
-};
-
-const reduceToAnyTrue = (data) => {
-    let rA = false;
-    data.forEach(item => {
-        if (item) {
-            rA = true;
-        } else {
-            rA = false;
-            return rA;
-        }
-    });
-    return rA;
-};
+}
